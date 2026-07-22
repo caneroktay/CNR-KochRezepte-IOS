@@ -24,92 +24,87 @@ Zutatenliste, Zubereitungsschritten, Kategorien, Fotos und externen Links
 
 ---
 
-✨ Funktionen
+## ✨ Funktionen
 
-    Rezepte erstellen, bearbeiten und löschen
+* Rezepte erstellen, bearbeiten und löschen
+* Kategorien verwalten
+* Favoriten markieren
+* Fotos hinzufügen (Kamera & Galerie)
+* Automatische Bildspeicherung
+* JSON‑basierte Datenspeicherung
+* Datenexport & Import (Backup)
+* Moderne SwiftUI‑Oberfläche
+* Klare MVVM‑Struktur mit Storage‑Layer
 
-    Kategorien verwalten
+---
 
-    Favoriten markieren
-
-    Fotos hinzufügen (Kamera & Galerie)
-
-    Automatische Bildspeicherung
-
-    JSON‑basierte Datenspeicherung
-
-    Datenexport & Import (Backup)
-
-    Moderne SwiftUI‑Oberfläche
-
-    Klare MVVM‑Struktur mit Storage‑Layer
-
-📂 Projektstruktur
+## 📂 Projektstruktur
 
 Die App ist übersichtlich in Module gegliedert:
 
-    Models/ – Datenmodelle für Rezepte und Kategorien
+* **Models/** – Datenmodelle für Rezepte und Kategorien
+* **Store/** – RecipeStore (ViewModel + Repository)
+* **Storage/** – JSON‑Speicher, Bildspeicher, Backup‑Manager
+* **Views/** – SwiftUI‑Screens
+* **Navigation/** – Router
+* **Theme/** – Farben, Icons, Styles
+* **Assets.xcassets/** – App‑Grafiken
 
-    Store/ – RecipeStore (ViewModel + Repository)
+---
 
-    Storage/ – JSON‑Speicher, Bildspeicher, Backup‑Manager
+## 🛠 Verwendete Technologien
 
-    Views/ – SwiftUI‑Screens
+* SwiftUI
+* Combine
+* MVVM
+* JSONEncoder / JSONDecoder
+* ZIPFoundation
+* Xcode 15+
 
-    Navigation/ – Router
+---
 
-    Theme/ – Farben, Icons, Styles
-
-    Assets.xcassets/ – App‑Grafiken
-
-🛠 Verwendete Technologien
-
-    SwiftUI
-
-    Combine
-
-    MVVM
-
-    JSONEncoder / JSONDecoder
-
-    ZIPFoundation
-
-    Xcode 15+
-
-📦 Installation
+## 📦 Installation
 
 Repository klonen:
-bash
 
-git clone https://github.com/caneroktay/CNR-KochRezepte-IOS.git
+```
+git clone https://github.com/caneroktay/KochRezepte.git
+```
 
 Projekt öffnen:
-Kod
 
+```
 KochRezepte.xcodeproj
+```
 
 Build & Run im Simulator oder auf einem echten Gerät.
-🧩 Datenspeicherung
+
+---
+
+## 🧩 Datenspeicherung
 
 Die App speichert alle Daten lokal:
 
-    RecipeJSONStorage – Rezeptdatenbank
+* **RecipeJSONStorage** – Rezeptdatenbank
+* **ImageStorageManager** – Bilddateien
+* **BackupManager** – Export/Import als JSON‑ZIP
 
-    ImageStorageManager – Bilddateien
-
-    BackupManager – Export/Import als JSON‑ZIP
     
 ## 📄 Lizenz
 
 Dieses Projekt steht unter der **MIT-Lizenz** – siehe [LICENSE](license.txt) für Details.
+Dieses Projekt dient Lern‑ und Entwicklungszwecken.
 
 ---
 
 ## 👨‍💻 Entwickler
 
 **Caner Oktay**
-Android-Entwicklung mit Kotlin & Jetpack Compose
 
 ---
 
 *Entwickelt mit ❤️ für alle, die ihre Rezepte an einem Ort sammeln möchten*
+
+
+
+
