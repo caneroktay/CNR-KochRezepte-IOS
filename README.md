@@ -81,7 +81,7 @@ Die App ist übersichtlich in Module gegliedert:
 Repository klonen:
 bash
 
-git clone https://github.com/caneroktay/KochRezepte.git
+git clone https://github.com/caneroktay/CNR-KochRezepte-IOS.git
 
 Projekt öffnen:
 Kod
