@@ -89,6 +89,50 @@ Die App speichert alle Daten lokal:
 * **ImageStorageManager** – Bilddateien
 * **BackupManager** – Export/Import als JSON‑ZIP
 
+---
+
+## 📋 Backup-Format
+
+Der Export erzeugt eine ZIP-Datei mit folgendem Aufbau:
+
+```
+kochrezepte_backup.zip
+├── recipes_database.json
+└── images/
+    ├── a1b2c3-....jpg
+    └── ...
+```
+
+Auszug aus `recipes_database.json`:
+
+```json
+{
+  "categories": [
+    { "id": "cat-1", "name": "Abendessen", "imageFileName": null }
+  ],
+  "recipes": [
+    {
+      "id": "rec-1",
+      "title": "Spaghetti Carbonara",
+      "categoryIds": ["cat-1"],
+      "description": "Klassisches italienisches Nudelgericht.",
+      "timeMinutes": 30,
+      "ingredients": [
+        { "id": "ing-1", "name": "Ei", "amount": "2 Stück" }
+      ],
+      "preparation": "Nudeln kochen, ...",
+      "note": "",
+      "links": ["https://youtube.com/watch?v=..."],
+      "imageFileName": "a1b2c3-....jpg",
+      "isFavorite": true,
+      "createdAt": 1750000000000
+    }
+  ]
+}
+```
+
+---
+
     
 ## 📄 Lizenz
 
