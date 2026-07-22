@@ -4,15 +4,9 @@
 //
 //  Created by Caner Oktay on 16.07.26.
 //
-
 import Foundation
 import UIKit
 
-/// Kamera/galeriden gelen resimleri uygulamanın kendi Documents/images
-/// klasörüne kaydeder. Bu klasör iOS'ta zaten sandbox'lı ve PRIVATE'tir —
-/// Info.plist'te "Application supports iTunes file sharing" veya
-/// "Supports opening documents in place" AÇMADIĞIN sürece Fotoğraflar
-/// uygulamasında ASLA görünmez (Android'deki filesDir ile birebir aynı mantık).
 final class ImageStorageManager {
     static let shared = ImageStorageManager()
 
@@ -25,7 +19,6 @@ final class ImageStorageManager {
         return dir
     }
 
-    /// UIImage'i kalıcı depoya kaydeder, sadece dosya adını döner.
     func saveImage(_ image: UIImage) -> String? {
         guard let data = image.jpegData(compressionQuality: 0.9) else { return nil }
         let fileName = "\(UUID().uuidString).jpg"

@@ -4,7 +4,6 @@
 //
 //  Created by Caner Oktay on 16.07.26.
 //
-
 import SwiftUI
 
 struct BottomNavBar: View {

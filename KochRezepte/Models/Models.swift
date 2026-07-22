@@ -4,8 +4,6 @@
 //
 //  Created by Caner Oktay on 16.07.26.
 //
-
-
 import Foundation
 
 struct Ingredient: Codable, Identifiable, Equatable {

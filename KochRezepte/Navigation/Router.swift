@@ -4,7 +4,6 @@
 //
 //  Created by Caner Oktay on 16.07.26.
 //
-
 import SwiftUI
 import Combine
 
@@ -18,8 +17,6 @@ enum Tab: CaseIterable {
     case home, recipes, categories, settings
 }
 
-/// navController'ın karşılığı: navigate()/popBackStack() yerine
-/// push()/pop() kullanıyoruz, mantık birebir aynı.
 @MainActor
 final class Router: ObservableObject {
     @Published var path = NavigationPath()
@@ -37,8 +34,6 @@ final class Router: ObservableObject {
         path = NavigationPath()
     }
 
-    /// Alt menüden bir sekmeye geçerken, o sekmenin kök ekranına dönülür
-    /// (önceki push'lanmış ekranlar temizlenir).
     func selectTab(_ tab: Tab) {
         selectedTab = tab
         popToRoot()

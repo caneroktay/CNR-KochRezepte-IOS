@@ -16,10 +16,6 @@ struct OnboardingView: View {
             VStack(spacing: 0) {
                 Spacer()
 
-                // TODO: Logo görselini Assets.xcassets'e ekleyip
-                // Image("AppLogo") ile burada gösterebilirsin.
-           
-                // RoundedRectangle(cornerRadius: 48)
                 Image("AppLogo")
                     .resizable()
                     .scaledToFit()

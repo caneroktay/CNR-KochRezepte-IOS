@@ -8,7 +8,6 @@
 import Foundation
 import Combine
 
-/// DataStore'un karşılığı: basit ayarları UserDefaults'ta tutar.
 final class SettingsStore: ObservableObject {
     @Published var userName: String {
         didSet { UserDefaults.standard.set(userName, forKey: Keys.userName) }
