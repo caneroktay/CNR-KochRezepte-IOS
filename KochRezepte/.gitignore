@@ -1,0 +1,29 @@
+# Xcode
+DerivedData/
+xcuserdata/
+*.xcuserstate
+
+# Build
+build/
+*.ipa
+*.app
+
+# Swift Package Manager
+/.build/
+Packages/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Images & Backups
+*.jpg
+*.jpeg
+*.png
+*.zip
+
+# App-specific
+KochRezepte/Storage/Images/
+KochRezepte/Storage/Backup/
+
